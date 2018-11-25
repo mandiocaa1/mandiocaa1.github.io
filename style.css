@@ -250,6 +250,25 @@ nav > div > ul > li:hover > a {
     cursor: initial;
 }
 
+/* FOOTER */
+
+footer {
+    color: black;
+    background: #555;
+    padding: 10px 0;
+}
+
+footer > ul {
+    list-style: none;
+    margin: 0;
+    width: 150px;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
 /* balões */
 
 .comentar > .fb-comments {
@@ -356,3 +375,42 @@ div.toggleBaloes {
     z-index: 2;
     transition: all 0.4s;
 }
+
+/* Icons */
+
+.fa {
+    padding: 15px;
+    font-size: 30px !important;
+    width: 60px;
+    border-radius: 50%;
+    text-decoration: none !important;
+    margin: 0 1px;
+    text-align: center;
+    color: white;
+    transition: all 0.3s;
+}
+
+.fa:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.fa-facebook {
+    background: #3B5998;
+}
+
+.fa-twitter {
+    background: #009DFF;
+}
+
+.fa-instagram {
+    background: #125688;
+  }
+
+.fa-youtube {
+    background: red;
+  }
+
+.fa-twitch {
+    background: #6A00FF;
+  }
