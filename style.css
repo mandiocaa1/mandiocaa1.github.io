@@ -253,9 +253,10 @@ nav > div > ul > li:hover > a {
 /* FOOTER */
 
 footer {
-    color: black;
-    background: #555;
+    color: white;
+    background: #003D20;
     padding: 10px 0;
+    text-shadow: 1px 1px 1px black;
 }
 
 footer > ul {
