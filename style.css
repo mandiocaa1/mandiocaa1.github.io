@@ -61,6 +61,7 @@ header {
 }
 
 .back > .desc, .backgif > .desc {
+    color: black;
     padding: 0 5px;
     position: relative;
     width: 153px;
