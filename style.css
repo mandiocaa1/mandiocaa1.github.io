@@ -214,16 +214,16 @@ nav > div > ul > li:hover > a {
     cursor: pointer;
     font-size: 60px;
     position: absolute;
-    left: 60;
-    top: 23;
+    left: 70;
+    top: 30;
     color: black; 
     opacity: 0.5;
     text-shadow: 0 0 2px white;
 }
 
 .loader {
-    left: 40 !important;
-    top: 5 !important;
+    left: 43 !important;
+    top: 13 !important;
     border: 10px solid #e5e5e5;
     border-top: 10px solid #333;
     border-radius: 50%;
