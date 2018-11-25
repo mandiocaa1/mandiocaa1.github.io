@@ -1,3 +1,9 @@
+html, body {
+    margin-top: 35px; 
+    overflow-x: hidden !important; 
+    font-size: 13px;
+}
+
 header {
     background: black;
     color: white;
@@ -31,7 +37,7 @@ header {
 }
 
 .back {
-    margin-top: 5;
+    margin-top: 9;
     margin-right: 5;
     border-radius: 10px;
     display: inline-block;
@@ -81,9 +87,9 @@ header {
 nav {
     position: fixed;
     width: 100%;
-    min-height: 42px;
+    min-height: 35px;
     top: 0;
-    background: #555;
+    background: #004726;
     z-index: 3;
 }
 
@@ -96,27 +102,25 @@ nav > ul {
 
 nav > ul > li {
     display: inline-block;
-    margin: 5 0;
     padding: 7px 9px;
-    background: #777;
+    background: #006C3C;
     transition: all 0.3s;
-    border-radius: 7px;
+    text-shadow: 1px 1px 0px black,
+                 2px 2px 0px black;
 }
 
 nav > ul > li:hover {
-    background: red;
-    color: black;
+    background: #008C4D;
 }
 nav > ul > li > a {
     font-size: 15px;
     font-weight: bold;
     text-decoration: none !important;
     transition: all 0.3s;
-    color: white;
+    color: #FFFFFF !important;
 }
 nav > ul > li:hover > a {
     transition: all 0.3s;
-    color: black;
 }
 
 /* DIV COLLAPSE NAV */
@@ -159,7 +163,6 @@ nav > div > ul > li:hover > a {
 
 #stream {
     color: white;
-    text-shadow: 2px 2px 1px black;
 }
 
 /* Collapse bar */
@@ -178,6 +181,7 @@ nav > div > ul > li:hover > a {
 /* BACK GIF */
 
 .backgif, .backimg {
+    margin-top: 8;
     margin-right: 5;
     background: #323232;
     display: inline-block;
@@ -244,4 +248,106 @@ nav > div > ul > li:hover > a {
     max-width: 240px;
     height: 170px;
     cursor: initial;
+}
+
+/* balões */
+
+.ativarTodos {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 160px;
+    /* width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content; */
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: black;
+    background: white;
+    border-radius: 7px;
+    transition: all 0.2s;
+    box-shadow: 0 0 10px black;
+}
+
+.comentar {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    top: 95;
+    right: 0;
+    background: white;
+    padding: 20px 10px 10px 20px;
+    border-radius: 7px;
+    box-shadow: 0 0 5px black;
+}
+
+.comentar > .fb-comments {
+    max-height: 350px !important;
+    overflow-y: auto !important;
+}
+
+.comentar > .exit {
+    cursor: pointer;
+    position: absolute;
+    top: 5;
+    left: 5;
+    color: white;
+    background: black;
+    padding: 3;
+    border-radius: 50%;
+}
+
+.toggleComentar, .naoCarregando {
+    z-index: 1;
+    cursor: pointer;
+    color: black;
+    position: absolute;
+    width: 200px;
+    /* width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content; */
+    right: 0;
+    top: 58;
+    background: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 0 5px black;
+    transition: transform 0.3s;
+}
+
+.naoCarregando {
+    display: none;
+}
+
+.toggleComentar:hover, .naoCarregando:hover, .ativarTodos:hover {
+    background: #D2D2D2;
+}
+.toggleComentar:active, .naoCarregando:active, .ativarTodos:active {
+    transform: scale(0.95);
+}
+
+.baloes {
+    top: 53;
+    right: 8;
+    position: fixed;
+    z-index: 2;
+}
+
+div.toggleBaloes {
+    box-shadow: 0 0 5px black;
+    color: white;
+    position: fixed;
+    top: 53;
+    right: 225;
+    cursor: pointer;
+    background: #4C4CFF;
+    padding: 10;
+    border-radius: 50%;
+    z-index: 2;
+    transition: all 0.4s;
 }

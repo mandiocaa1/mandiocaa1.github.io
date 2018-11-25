@@ -138,7 +138,7 @@ $(document).ready(function () {
             $(this).siblings('.loader').remove();
         });
 
-        $('.backimg').click(function (e) {
+        $('.backgif').click(function (e) {
             if (!(e.target.tagName === 'IMG') && !(e.target.tagName == 'I')) return;
 
             var img = $(this).children('.gif').children('img')[0];
@@ -165,6 +165,7 @@ function updateNav() {
 //  MUDANDO TEXTO DE "AtivarTodos"
 
 var url = location.pathname.substring(1).split('.')[0];
+
 if (url == 'gifs') {
     $('.ativarTodos').html('Ativar todos');
     $('.ativarTodos').css('padding', '15');
@@ -178,7 +179,4 @@ if (url == 'imagens') {
     $('.qntAudios').css('top', 37);
     $('.qntGIF').css('top', 74);
     $('.qntImg').css('top', 111);
-
-    $('.backimg').css('height', 244);
-    $('.backimg').css('width', 270);
 }
