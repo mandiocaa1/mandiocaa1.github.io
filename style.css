@@ -252,6 +252,11 @@ nav > div > ul > li:hover > a {
 
 /* balões */
 
+.comentar > .fb-comments {
+    max-height: 350px !important;
+    overflow-y: auto !important;
+}
+
 .ativarTodos {
     position: absolute;
     top: 0;

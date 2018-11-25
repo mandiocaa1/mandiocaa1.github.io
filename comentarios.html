@@ -37,11 +37,24 @@
             <header>MANDIOCAA1<br>MOMENTS</header>
             <div class="row main-post" style="background: white;">
                 <h1>Comentarios</h1>
-                <div class="fb-comments" data-order-by='reverse_time' data-href="https://hydrogenfalas.github.io/comentarios.html" data-numposts="100"></div>
+                <div style="padding: 20">
+                    <div class="fb-comments" data-order-by='reverse_time' data-href="https://mandiocaa1.github.io/comentarios.html" data-width="500" data-numposts="30"></div>
+                </div>
             </div>
             <footer class="row"></footer>
         </div>
     </div>
+
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.2&appId=546155439142435&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 </body>
 
 </html>

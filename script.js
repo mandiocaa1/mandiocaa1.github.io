@@ -12,13 +12,13 @@ $(document).ready(function () {
         $(this).siblings("i").toggleClass("fa-pause-circle fa-play-circle");
     });
 
-    // $('.ativarTodos').click(function () {
-    //     if (url == 'gifs') {
-    //         $('.gif > img').click();
-    //     } else {
-    //         $('audio').click();
-    //     }
-    // });
+    $('.ativarTodos').click(function () {
+        if (url == 'gifs') {
+            $('.gif > img').click();
+        } else {
+            $('audio').click();
+        }
+    });
 
     // BOTÃO DOWNLOAD
 
