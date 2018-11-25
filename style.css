@@ -1,0 +1,247 @@
+header {
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    padding: 40px 0;
+}
+
+/* main post */
+
+.main-post {
+    min-height: 600px;
+    background-image: url("img/lamb.png");
+    background-color: #160000;
+    /* background-repeat: no-repeat; */
+    background-size: 2%;
+    /* background-position-x: -1280px;
+    background-position-y: -800px; */
+}
+
+.main-post > h1 {
+    text-shadow: 1px 1px 1px black,
+                 2px 2px 1px black,
+                 3px 3px 1px black;
+    background: #006C3C;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10 0;
+    font-weight: bold;
+}
+
+.back {
+    margin-top: 5;
+    margin-right: 5;
+    border-radius: 10px;
+    display: inline-block;
+    background: #323232;
+    width: 170px;
+    height: 253px;
+}
+
+.back, .backgif, .backimg {
+    box-shadow: 0 0 4px 2px black;
+}
+
+.botao > i {
+    font-size: 130px;
+    position: relative;
+    left: 5;
+    top: 5;
+    color: black; 
+    opacity: 0.5;
+    text-shadow: 0 0 2px white;
+}
+
+.back > .desc, .backgif > .desc {
+    padding: 0 5px;
+    position: relative;
+    width: 153px;
+    max-width: 153px;
+    background: rgb(255, 255, 255, 0.4);
+    margin-bottom: 5px;
+    font-size: 11px;
+    border-radius: 5px;
+    left: 9;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 45px;
+}
+
+.backgif > .desc {
+    width: 162px;
+    max-width: 162px;
+}
+
+/* NAV */
+
+nav {
+    position: fixed;
+    width: 100%;
+    min-height: 42px;
+    top: 0;
+    background: #555;
+    z-index: 3;
+}
+
+nav > ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+    margin: 5 0;
+    padding: 7px 9px;
+    background: #777;
+    transition: all 0.3s;
+    border-radius: 7px;
+}
+
+nav > ul > li:hover {
+    background: red;
+    color: black;
+}
+nav > ul > li > a {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none !important;
+    transition: all 0.3s;
+    color: white;
+}
+nav > ul > li:hover > a {
+    transition: all 0.3s;
+    color: black;
+}
+
+/* DIV COLLAPSE NAV */
+
+nav > div > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > div > ul > li {
+    width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    margin: 5 0;
+    padding: 7px 9px;
+    background: grey;
+    transition: all 0.3s;
+    border-radius: 7px;
+}
+
+nav > div > ul > li:hover {
+    background: red;
+    color: black;
+}
+nav > div > ul > li > a {
+    font-weight: bold;
+    text-decoration: none !important;
+    transition: all 0.3s;
+    color: white;
+}
+nav > div > ul > li:hover > a {
+    font-weight: bold;
+    text-decoration: none !important;
+    transition: all 0.3s;
+    color: black;
+}
+
+/* STREAM */
+
+#stream {
+    color: white;
+    text-shadow: 2px 2px 1px black;
+}
+
+/* Collapse bar */
+
+#collapse {
+    width: 40px;
+    display: none;
+    background: grey;
+    padding: 7px 9px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 5 5;
+}
+
+/* BACK GIF */
+
+.backgif, .backimg {
+    margin-right: 5;
+    background: #323232;
+    display: inline-block;
+    width: 180px;
+    height: 235px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+}
+
+/* GIF */
+
+.gif {
+    position: relative;
+}
+
+.gif > img, .img > img {
+    display: block;
+    cursor: pointer;
+    /* pointer-events: painted; */
+    border-radius: 10px;
+    width: 160px;
+    height: 120px;
+    margin: 11px auto;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.9);
+    transition: all 0.3s;
+}
+
+.gif > i {
+    display: block;
+    cursor: pointer;
+    font-size: 60px;
+    position: absolute;
+    left: 60;
+    top: 23;
+    color: black; 
+    opacity: 0.5;
+    text-shadow: 0 0 2px white;
+}
+
+.loader {
+    left: 40 !important;
+    top: 5 !important;
+    border: 10px solid #e5e5e5;
+    border-top: 10px solid #333;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* IMAGEM */
+.backimg {
+    width: auto;
+    padding: 0 8;
+}
+
+.img > img {
+    width: auto;
+    max-width: 240px;
+    height: 170px;
+    cursor: initial;
+}

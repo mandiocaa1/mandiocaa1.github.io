@@ -1,0 +1,20 @@
+.botao {
+    cursor: pointer;
+    display: block;
+    /* display: inline-block; */
+    width: 140px;
+    height: 140px;
+    background: URL("img/mandioca.png");
+    background-position: -75 -25;
+    border-radius: 50%;
+    transition: all 1s;
+    /* margin: 15 10 20 10; */
+    margin: 10 auto;
+    box-shadow: 0 0 14px black;
+}
+
+
+
+.botao:active {
+    transform: scale(0.8);
+}
