@@ -54,7 +54,7 @@ header {
 .botao > i {
     font-size: 130px;
     position: relative;
-    left: 5;
+    left: 0;
     top: 5;
     color: black; 
     opacity: 0.5;
@@ -210,6 +210,8 @@ nav > div > ul > li:hover > a {
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.9);
     transition: all 0.3s;
 }
+
+
 
 .gif > i {
     display: block;
