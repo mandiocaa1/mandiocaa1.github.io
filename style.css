@@ -15,6 +15,7 @@ header {
 /* main post */
 
 .main-post {
+    text-align: center;
     min-height: 600px;
     background-image: url("img/lamb.png");
     background-color: #160000;
