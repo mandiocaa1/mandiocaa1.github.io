@@ -94,6 +94,7 @@ nav {
     top: 0;
     background: #004726;
     z-index: 3;
+    border-bottom: 1px solid #004726;
 }
 
 nav > ul {
