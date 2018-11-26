@@ -4,11 +4,15 @@ html, body {
     font-size: 13px;
 }
 
+.painel {
+    padding: 10;
+}
+
 header {
     background: black;
     color: white;
     text-align: center;
-    font-size: 80px;
+    font-size: 60px;
     padding: 40px 0;
 }
 
@@ -19,10 +23,7 @@ header {
     min-height: 600px;
     background-image: url("img/lamb.png");
     background-color: #160000;
-    /* background-repeat: no-repeat; */
     background-size: 2%;
-    /* background-position-x: -1280px;
-    background-position-y: -800px; */
 }
 
 .main-post > h1 {
@@ -139,26 +140,25 @@ nav > div > ul > li {
     width: -webkit-max-content;
     margin: 5 0;
     padding: 7px 9px;
-    background: grey;
+    background: #006C3C;
     transition: all 0.3s;
     border-radius: 7px;
+    text-shadow: 1px 1px 0px black,
+                 2px 2px 0px black;
 }
 
 nav > div > ul > li:hover {
-    background: red;
-    color: black;
+    background: #008C4D;
 }
 nav > div > ul > li > a {
     font-weight: bold;
     text-decoration: none !important;
     transition: all 0.3s;
-    color: white;
+    color: #FFFFFF !important;
 }
 nav > div > ul > li:hover > a {
-    font-weight: bold;
-    text-decoration: none !important;
+    /* text-decoration: none !important; */
     transition: all 0.3s;
-    color: black;
 }
 
 /* STREAM */
@@ -172,7 +172,7 @@ nav > div > ul > li:hover > a {
 #collapse {
     width: 40px;
     display: none;
-    background: grey;
+    background: #008C4D;
     padding: 7px 9px;
     border-radius: 7px;
     cursor: pointer;
